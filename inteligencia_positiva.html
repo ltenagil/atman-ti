@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Atman</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Julee|Economica:400italic|Simonetta:400italic|Averia+Gruesa+Libre|Handlee|PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" language="javascript">
+	$(document).ready(function() {
+    
+    $("body").css("display", "none");
+    $("body").fadeIn(1000);
+    
+    $("a.transicion").click(function(event){
+        event.preventDefault();
+        linkDestino = this.href;
+        $("body").fadeOut(1000, redireccionarPag);      
+    });
+        
+    function redireccionarPag() {
+        window.location = linkDestino;
+    } 
+});
+</script>
+</head>
+
+<body>
+<div id="container">
+		<div class="header">
+        	<div id="logo_container">
+				<a id="logo" href="index.html"><img src="images/logo_ti.png" /></a>
+			</div>
+            <div id="menu_container">
+                <ul id="menu-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="programas.html">Programas In Company</a></li>
+                    <li><a href="consultorias.html">Consultoría de Autor</a></li>
+                    <li><a href="pildoras.html">Píldoras de Conocimiento</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="http://grupoatman.wordpress.com" target="_blank">Blog</a></li>
+                    <li><a href="coaching.html">Coaching</a></li>
+                    <li><a href="presentaciones.html">Presentaciones</a></li>
+                </ul>
+			</div>
+		</div><!-- end .header -->
+        <div id="content">
+        	<div id="ipos-1">
+            	<div id="ipos-11">
+					<h2 class="tit_ipos">beneficios</h2>
+                    <ul class="viñeta">
+                    	<li>Mejora de los niveles de satisfacción laboral.</li>
+						<li>Reducción de los índices de absentismo.</li>
+						<li>Aumento de índices de calidad de producto.</li>
+						<li>Reducción de los niveles de estrés y ansiedad.</li>
+						<li>Aumento de la productividad coste/hora de trabajo.</li>
+						<li>Aumento del número de iniciativas de los propios empleados (procesos y servicios).</li>
+						<li>Aumento de la satisfacción de los clientes.</li>
+					</ul>
+				</div>
+                <div id="ipos-12">
+					<h2 class="tit_ipos">objetivos</h2>
+                    <ul class="viñeta">
+                    	<li>Mejorar la Productividad, Creatividad y Compromiso de todos los empleados de la organización.</li>
+						<li>Mejorar los resultados del estudio de clima laboral.</li>
+						<li>Orientar la organización hacia un foco de oportunidad en la actual situación social y económica.</li>
+						<li>Mejorar la resiliencia.</li>
+						<li>Mejorar la colaboración, cooperación y trabajo en equipo.</li>
+					</ul>
+				</div>
+                <div id="ipos-13">
+					<h2 class="tit_ipos">cómo</h2>
+                    <ul class="viñeta">
+                    	<li>Desarrollando entre los asistentes una actitud mental positiva.</li>
+						<li>Identificando los keyplayer en la organización con la mayor inteligencia positiva para que actúen como catalizadores.</li>
+						<li>Estableciendo indicadores de productividad y un modelo de medición de los mismos.</li>
+						<li>Identificando y trabajando sobre las fortalezas personales de todos los miembros de la organización.</li>
+					</ul>
+				</div>
+            </div>
+            <div id="ipos-2">
+            	<img src="images/mesa.png" width="298px" />
+				<h2 class="tit_nos">Programa de Inteligencia Positiva</h2>
+                <p class="cita">"Sería lindo despertar un día y encontrarse con que la vida de uno, depende de uno." Mafalda</p>
+            </div>
+        </div><!-- end #content -->
+      <div id="footer">
+            <div id="firma">© 2013 by Atman Talento e Innovación. All rights reserved</div>
+            <div id="social-icons">
+				<a href="https://es-es.facebook.com/Grupoatman" target="_blank"><img src="images/facebook.png" /></a>
+                <a href="http://es.linkedin.com/in/grupoatman" target="_blank"><img src="images/linkedin.png" /></a>
+                <a href="http://grupoatman.wordpress.com/" target="_blank"><img src="images/wordpress.png" /></a>
+			</div>
+        </div><!-- end .footer -->
+	</div><!-- end .container -->
+</body>
+</html>

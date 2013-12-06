@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Atman</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Julee|Economica:400italic|Simonetta:400italic|Averia+Gruesa+Libre|Handlee|PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" language="javascript">
+	$(document).ready(function() {
+    
+    $("body").css("display", "none");
+    $("body").fadeIn(1000);
+    
+    $("a.transicion").click(function(event){
+        event.preventDefault();
+        linkDestino = this.href;
+        $("body").fadeOut(1000, redireccionarPag);      
+    });
+        
+    function redireccionarPag() {
+        window.location = linkDestino;
+    } 
+});
+</script>
+</head>
+
+<body>
+<div id="container">
+		<div class="header">
+        	<div id="logo_container">
+				<a id="logo" href="index.html"><img src="images/logo_ti.png" /></a>
+			</div>
+            <div id="menu_container">
+                <ul id="menu-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="programas.html">Programas In Company</a></li>
+                    <li><a href="consultorias.html">Consultoría de Autor</a></li>
+                    <li><a href="pildoras.html">Píldoras de Conocimiento</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="http://grupoatman.wordpress.com" target="_blank">Blog</a></li>
+                    <li><a href="coaching.html">Coaching</a></li>
+                    <li><a href="presentaciones.html">Presentaciones</a></li>
+                </ul>
+			</div>
+		</div><!-- end .header -->
+        <div id="content">
+        	<div id="cvs-left">
+                	<h2 class="tit_cvs">Elena Blasco</h2>
+                    <p class="p_cvs">Su vida laboral ha transcurrido en la banca, donde comienza en 1996 como gestora comercial y posteriormente va ocupando puestos de distinta responsabilidad en oficina.</p>
+					<p class="p_cvs">En 2002 es nombrada Interventora Regional del área de Levante, donde comienza a tener responsabilidades en el ámbito de personas, además de otras tareas relacionadas con planes de expansión de la Entidad.</p>
+                    <p class="p_cvs">En 2003 es nombrada Responsable de RRHH de las provincias de Castellón, Valencia, Alicante, Murcia, Almería y Albacete. Miembro del Comité de Dirección de la Dirección Regional .
+Sus funciones además de la gestión de 600 personas es la de selección, detección y retención del talento.</p>
+                    <p class="p_cvs">Es aquí donde toma conciencia de la necesidad de trabajar con las personas para el desarrollo del potencial y del talento.</p>
+            </div>
+            <div id="cvs-right">
+					<div class="cvs_img_elena"><img src="images/elena.jpg"/></div>
+                    <p class="sub_cvs">Licenciada en Ciencias Económicas y Empresariales por la Universidad de Valencia. Master en Dirección y Gestión de Recursos Humanos. Coach ejecutivo certificado por AECOP.</p>
+            </div>
+        </div><!-- end #content -->
+      <div id="footer">
+            <div id="firma">© 2013 by Atman Talento e Innovación. All rights reserved</div>
+            <div id="social-icons">
+				<a href="https://es-es.facebook.com/Grupoatman" target="_blank"><img src="images/facebook.png" /></a>
+                <a href="http://es.linkedin.com/in/grupoatman" target="_blank"><img src="images/linkedin.png" /></a>
+                <a href="http://grupoatman.wordpress.com/" target="_blank"><img src="images/wordpress.png" /></a>
+			</div>
+        </div><!-- end .footer -->
+	</div><!-- end .container -->
+</body>
+</html>

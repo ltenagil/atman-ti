@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Atman</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Julee|Economica:400italic|Simonetta:400italic|Averia+Gruesa+Libre|Handlee|PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" language="javascript">
+	$(document).ready(function() {
+    
+    $("body").css("display", "none");
+    $("body").fadeIn(1000);
+    
+    $("a.transicion").click(function(event){
+        event.preventDefault();
+        linkDestino = this.href;
+        $("body").fadeOut(1000, redireccionarPag);      
+    });
+        
+    function redireccionarPag() {
+        window.location = linkDestino;
+    } 
+});
+</script>
+</head>
+
+<body>
+<div id="container">
+		<div class="header">
+        	<div id="logo_container">
+				<a id="logo" href="index.html"><img src="images/logo_ti.png" /></a>
+			</div>
+            <div id="menu_container">
+                <ul id="menu-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="programas.html">Programas In Company</a></li>
+                    <li><a href="consultorias.html">Consultoría de Autor</a></li>
+                    <li><a href="pildoras.html">Píldoras de Conocimiento</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="http://grupoatman.wordpress.com" target="_blank">Blog</a></li>
+                    <li><a href="coaching.html">Coaching</a></li>
+                    <li><a href="presentaciones.html">Presentaciones</a></li>
+                </ul>
+			</div>
+		</div><!-- end .header -->
+        <div id="content">
+        	<div id="cvs-left">
+                	<h2 class="tit_cvs">Ernesto Gaspar</h2>
+                    <p class="p_cvs">Ernesto comenzó su vida profesional como auxiliar administrativo en Banesto y ocupó  distintos puestos directivos en áreas como la comercial, recursos humanos o servicios. Tras una década en el sector financiero recibió una propuesta para  incorporarse al mundo de la consultoría en  Soluziona (multinacional española de consultoría). Desde allí pudo dar rienda suelta a su pasión por el talento y las personas, primero como  Gerente de Desarrollo de Talento, Director del área de Selección y evaluación y finalmente responsable de Consultoría de Organización y RRHH en Indra liderando equipos y proyectos a nivel nacional e internacional.</p>
+					<p class="p_cvs">Ha realizado proyectos de consultoría de autor acompañando a clientes en programas de desarrollo de talento individual, de equipos u organizacional, diseños organizativos, definición de puestos, reestructuraciones o proyectos de cambio organizacional.</p>
+                    <p class="p_cvs">Ha trabajado en  proyectos con empresas tanto públicas como privadas en sectores como el farmacéutico, sanitario, banca, industrial, servicios, utilities o turismo como  Banco de España, BP Oil, AENA, Bayer, Hospital 12 de Octubre, Consejería de Sanidad de Madrid, Glaxo, UBE o  Banco Santander.</p>
+                    <p class="p_cvs">Es coach ejecutivo desde el 2001 y ha realizado procesos de coaching tanto a personal directivo, como mandos intermedios o comités de dirección. Su pasión por el coaching le ha llevado a ser miembro de la junta directiva de AECOP Levante.</p>
+                    <p class="p_cvs">Ernesto es miembro del patronato y fundador de Fundación Aleteia, cuyo visión es la mejora de la sociedad a través de la mejora del sistema educativo.</p>
+            </div>
+            <div id="cvs-right">
+					<div class="cvs_img_ernst"><img src="images/ernesto.jpg"/></div>
+                    <p class="sub_cvs">Licenciado en Psicología. Master en Dirección de Recursos Humanos. Profesor colaborador en la Universidad de Valencia y Alicante. Profesor de Coaching en Centro Europeo de Coaching Ejecutivo. Coach Certificado por ICF, AECOP y EMCC.</p>
+            </div>
+        </div><!-- end #content -->
+      <div id="footer">
+            <div id="firma">© 2013 by Atman Talento e Innovación. All rights reserved</div>
+            <div id="social-icons">
+				<a href="https://es-es.facebook.com/Grupoatman" target="_blank"><img src="images/facebook.png" /></a>
+                <a href="http://es.linkedin.com/in/grupoatman" target="_blank"><img src="images/linkedin.png" /></a>
+                <a href="http://grupoatman.wordpress.com/" target="_blank"><img src="images/wordpress.png" /></a>
+			</div>
+        </div><!-- end .footer -->
+	</div><!-- end .container -->
+</body>
+</html>

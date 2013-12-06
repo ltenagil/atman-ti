@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Atman</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Julee|Economica:400italic|Simonetta:400italic|Averia+Gruesa+Libre|Handlee|PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" language="javascript">
+	$(document).ready(function() {
+    
+    $("body").css("display", "none");
+    $("body").fadeIn(1000);
+    
+    $("a.transicion").click(function(event){
+        event.preventDefault();
+        linkDestino = this.href;
+        $("body").fadeOut(1000, redireccionarPag);      
+    });
+        
+    function redireccionarPag() {
+        window.location = linkDestino;
+    } 
+});
+</script>
+</head>
+
+<body>
+<div id="container">
+		<div class="header">
+        	<div id="logo_container">
+				<a id="logo" href="index.html"><img src="images/logo_ti.png" /></a>
+			</div>
+            <div id="menu_container">
+                <ul id="menu-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="programas.html">Programas In Company</a></li>
+                    <li><a href="consultorias.html">Consultoría de Autor</a></li>
+                    <li><a href="pildoras.html">Píldoras de Conocimiento</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="http://grupoatman.wordpress.com" target="_blank">Blog</a></li>
+                    <li><a href="coaching.html">Coaching</a></li>
+                    <li><a href="presentaciones.html">Presentaciones</a></li>
+                </ul>
+			</div>
+		</div><!-- end .header -->
+        <div id="content">
+        	<div id="cvs-left">
+                	<h2 class="tit_cvs">Juanfer Bou</h2>
+                    <p class="p_cvs">Juanfer comenzó su carrera profesional como Consultor de RRHH junior en distintas Consultoras de la Comunidad Valenciana, para pasar en 1984 a ocupar el puesto de Director de la oficina de Puerto de Sagunto de la empresa LABORMAN, posteriormente RANDSTAD hasta 2008, donde se incorpora a diversas Consultoras como Director de la Oficina de Levante, entre ellas HUMAN MANAGEMENT SYSTEMS y la ESCUELA EUROPEA DE COACHING. En 2012 recala en el GRUPO ATMAN como Director de Desarrollo de Negocio.</p>
+            </div>
+            <div id="cvs-right-juanfer">
+					<div class="cvs_img"><img src="images/juanfer.png"/></div>
+                    <p class="sub_cvs">Es licenciado en Psicología y Coach Certificado por ICF (International Coach Federation). Además es socio fundador de la FUNDACIÓN ALETEIA, una fundación educativa cuyo fin fundacional es "mejorar la sociedad, a través de la mejora de la calidad del sistema educativo". Autor del Libro "Coaching para docentes: el desarrollo de habilidades en el aula", traducido al portugués y al valenciano.</p>
+            </div>
+        </div><!-- end #content -->
+      <div id="footer">
+            <div id="firma">© 2013 by Atman Talento e Innovación. All rights reserved</div>
+            <div id="social-icons">
+				<a href="https://es-es.facebook.com/Grupoatman" target="_blank"><img src="images/facebook.png" /></a>
+                <a href="http://es.linkedin.com/in/grupoatman" target="_blank"><img src="images/linkedin.png" /></a>
+                <a href="http://grupoatman.wordpress.com/" target="_blank"><img src="images/wordpress.png" /></a>
+			</div>
+        </div><!-- end .footer -->
+	</div><!-- end .container -->
+</body>
+</html>

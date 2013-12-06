@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Atman</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Julee|Economica:400italic|Simonetta:400italic|Averia+Gruesa+Libre|Handlee|PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" language="javascript">
+	$(document).ready(function() {
+    
+    $("body").css("display", "none");
+    $("body").fadeIn(1000);
+    
+    $("a.transicion").click(function(event){
+        event.preventDefault();
+        linkDestino = this.href;
+        $("body").fadeOut(1000, redireccionarPag);      
+    });
+        
+    function redireccionarPag() {
+        window.location = linkDestino;
+    } 
+});
+</script>
+</head>
+
+<body>
+<div id="container">
+		<div class="header">
+        	<div id="logo_container">
+				<a id="logo" href="index.html"><img src="images/logo_ti.png" /></a>
+			</div>
+            <div id="menu_container">
+                <ul id="menu-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="activo">Programas In Company</li>
+                    <li><a href="consultorias.html">Consultoría de Autor</a></li>
+                    <li><a href="pildoras.html">Píldoras de Conocimiento</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="http://grupoatman.wordpress.com" target="_blank">Blog</a></li>
+                    <li><a href="coaching.html">Coaching</a></li>
+                    <li><a href="presentaciones.html">Presentaciones</a></li>
+                </ul>
+			</div>
+		</div><!-- end .header -->
+        <div id="content">
+        	<div id="prog-1">
+            	<div id="prog-img">
+					<a href="inteligencia_positiva.html"><img src="images/mesa.png" width="298px" /></a>
+                    <a href="inteligencia_emocional_grupal.html"><img src="images/ciudad.jpg" width="298px" /></a>
+                    <a href="equilibrio_rendimiento_equipos.html"><img src="images/medicion_equipos.jpg" width="298px" /></a>
+				</div>
+                <div id="prog-tit">
+                	<h2 class="tit_prog">Inteligencia Positiva</h2>
+                    <h2 class="tit_prog">Inteligencia Emocional Grupal</h2>
+                    <h2 class="tit_prog">Equilibrio y Rendimiento en Equipos</h2>
+                </div>
+            </div>
+            <div id="prog-2">
+            	<div id="prog-21">
+                	<p class="p_prog">Desarrollar y potenciar una Actitud Mental Positiva (AMP) se traduce en una mejora de los niveles de Productividad, Compromiso y Creatividad.</p>
+					<p class="p_prog">Así se desprende del análisis longitudinal de 255 estudios académicos realizados por Sonja Lyu-bomirsky, Laura King y Ed Diener, en las Universidades de Columbia, California e Illinois en 2005. (Harvard Business Review Feb 2010)</p>
+					<a href="inteligencia_positiva.html" class="masinfo" id="mas1">más información</a>
+                </div>
+                <div id="prog-22">
+                	<p class="p_prog">Las emociones individuales y colectivas tienen una incidencia significativa en el rendimiento.</p>
+					<p class="p_prog">Cherniss y Goleman han realizado diversas investigaciones entorno a lo que denominan "inteligencia emocional grupal" en las cuales identifican tres creencias colectivas que predicen y facilitan la colaboración y la cooperación; estas creencias colectivas son:</p>
+                    <ul class="viñeta">
+                    	<li>Confianza</li>
+                        <li>Sentido de Identidad grupal</li>
+                        <li>Sentido de eficacia como equipo</li>
+                    </ul>
+                    <a href="inteligencia_emocional_grupal.html" class="masinfo" id="mas2">más información</a>
+                </div>
+                <div id="prog-23">
+                	<p class="p_prog">Los equipos humanos son sistemas de intercambio de información y tareas que requieren de una correcta colaboración y cooperación. La metodología de Roles de Equipos del Instituto Belbin fue descubierta en 1979 como resultado de una investigación de más de 7 años en el Heley Collage, Uk. Su aportación más destacada es la de establecer un sistema de interacción y aportaciones entre los miembros de cualquier equipo basado en las fortalezas propias de cada miembro del equipo y en la dinámica de Roles.</p>
+                    <a href="equilibrio_rendimiento_equipos.html" class="masinfo" id="mas3">más información</a>
+                </div>
+            </div>
+        </div><!-- end #content -->
+      <div id="footer">
+            <div id="firma">© 2013 by Atman Talento e Innovación. All rights reserved</div>
+            <div id="social-icons">
+				<a href="https://es-es.facebook.com/Grupoatman" target="_blank"><img src="images/facebook.png" /></a>
+                <a href="http://es.linkedin.com/in/grupoatman" target="_blank"><img src="images/linkedin.png" /></a>
+                <a href="http://grupoatman.wordpress.com/" target="_blank"><img src="images/wordpress.png" /></a>
+			</div>
+        </div><!-- end .footer -->
+	</div><!-- end .container -->
+</body>
+</html>

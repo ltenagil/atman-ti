@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Atman</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Julee|Economica:400italic|Simonetta:400italic|Averia+Gruesa+Libre|Handlee|PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" language="javascript">
+	$(document).ready(function() {
+    
+    $("body").css("display", "none");
+    $("body").fadeIn(1000);
+    
+    $("a.transicion").click(function(event){
+        event.preventDefault();
+        linkDestino = this.href;
+        $("body").fadeOut(1000, redireccionarPag);      
+    });
+        
+    function redireccionarPag() {
+        window.location = linkDestino;
+    } 
+});
+</script>
+</head>
+
+<body>
+<div id="container">
+		<div class="header">
+        	<div id="logo_container">
+				<a id="logo" href="index.html"><img src="images/logo_ti.png" /></a>
+			</div>
+            <div id="menu_container">
+                <ul id="menu-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="programas.html">Programas In Company</a></li>
+                    <li><a href="consultorias.html">Consultoría de Autor</a></li>
+                    <li><a href="pildoras.html">Píldoras de Conocimiento</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="http://grupoatman.wordpress.com" target="_blank">Blog</a></li>
+                    <li><a href="coaching.html">Coaching</a></li>
+                    <li><a href="presentaciones.html">Presentaciones</a></li>
+                </ul>
+			</div>
+		</div><!-- end .header -->
+        <div id="content">
+        	<div id="cvs-left">
+                	<h2 class="tit_cvs">José Juan Agudo</h2>
+                    <p class="p_cvs">José Juan comenzó su carrera profesional como analista financiero en el área Corporate Finance de Arthur Andersen Consulting realizando análisis de riesgos de viabilidad de proyectos de fusión en entornos financieros internacionales, principalmente en fusiones bancarias. Posteriormente se incorporó como manager y director de proyectos  al área de business engeneering de American Express, liderando proyectos multiculturales en la region EMEA relacionados con plataformas de atención al cliente, implantación de sistemas de información, scoring modelling y modelos de riesgo y lanzamiento de nuevos productos en mercados emergentes y de marca compartida.</p>
+					<p class="p_cvs">Tras 10 años en el mundo de las grandes multinacionales pasa a crear su propia empresa de consultoría de autor, especializada en motivación y desarrollo de talento y competencias profesionales. Es Secretario General de AECOP-EMCC Spain, asociación española y europea de Coaching y Mentoring. Forma parte del Consejo Permanente de Turismo Valencia, Fundación, cuyo objeto es el desarrollo internacional de la imagen de marca VLC. José Juan es Socio fundador de la Fundación Aleteia, cuya visión es mejora de la sociedad a través de la mejora del sistema educativo.</p>
+            </div>
+            <div id="cvs-right">
+					<div class="cvs_img_josejuan"><img src="images/josejuan.jpg"/></div>
+                    <p class="sub_cvs">Licenciado en CC Empresariales. MBA por el Instituto de Empresa.</br>Profesor colaborador de programas Master en la Universidad de Valencia, Universidad de Alicante y diferentes escuelas de negocios.</p>
+            </div>
+        </div><!-- end #content -->
+      <div id="footer">
+            <div id="firma">© 2013 by Atman Talento e Innovación. All rights reserved</div>
+            <div id="social-icons">
+				<a href="https://es-es.facebook.com/Grupoatman" target="_blank"><img src="images/facebook.png" /></a>
+                <a href="http://es.linkedin.com/in/grupoatman" target="_blank"><img src="images/linkedin.png" /></a>
+                <a href="http://grupoatman.wordpress.com/" target="_blank"><img src="images/wordpress.png" /></a>
+			</div>
+        </div><!-- end .footer -->
+	</div><!-- end .container -->
+</body>
+</html>
